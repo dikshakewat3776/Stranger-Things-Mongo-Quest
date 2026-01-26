@@ -2079,7 +2079,7 @@ This project covers:
 
 ---
 
-## 7. Complete MongoDB  Questions (100 Questions)
+## 7. Complete MongoDB  Questions
 
 This section contains 100 comprehensive MongoDB  questions organized by topic, covering everything from fundamentals to advanced concepts.
 
