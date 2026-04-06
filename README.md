@@ -1,4 +1,4 @@
-# Frontend Implementation Guide
+# Stranger Things Mongo Quest
 
 ## Project Overview
 
