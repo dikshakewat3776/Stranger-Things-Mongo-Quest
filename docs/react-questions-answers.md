@@ -1,10 +1,8 @@
 # React Questions & Answers
 
-This content was moved from `README.md` for readability.
-
 ---
 
-## 5. Complete React Questions & Answers
+## Complete React Questions & Answers
 
 ### React Fundamentals
 

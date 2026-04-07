@@ -1,7 +1,4 @@
 # MongoDB Questions & Answers
-
-This content was moved from `README.md` for readability.
-
 ---
 
 ## MongoDB Concepts & Advanced Questions

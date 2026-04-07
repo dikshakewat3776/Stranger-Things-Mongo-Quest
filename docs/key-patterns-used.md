@@ -1,31 +1,29 @@
 # Key Patterns Used in This Codebase
 
-This content was moved from `README.md` for readability.
+---
+
+## Summary of Patterns
+
+| Pattern | When to Use | Benefits |
+|---------|-------------|----------|
+| **Loading State** | Any async data fetching | Better UX, prevents empty states |
+| **Container/Presenter** | Shared layout across pages | Code reuse, separation of concerns |
+| **Controlled Forms** | Forms with validation/transformation | Full control, real-time updates |
+| **Prop Drilling** | Simple state sharing (2-3 levels) | No extra libraries needed |
+| **Early Return** | Multiple conditional states | Cleaner code, less nesting |
+| **List Rendering** | Any dynamic lists | Efficient updates, proper reconciliation |
+| **Conditional CSS** | Dynamic styling based on state | Flexible, works with utility CSS |
+| **Multiple useState** | Independent state values | Clear separation, easier debugging |
+| **useEffect Dependencies** | Side effects tied to data | Prevents unnecessary re-runs |
+| **Error Handling** | All async operations | Graceful failures, user feedback |
+| **Component Composition** | Complex UI with repeated patterns | Reusability, maintainability |
+| **URL Parameters** | Dynamic routes | Access route data in components |
+| **Animations** | Enhanced UX | Polished, professional feel |
+| **Temporary State** | User feedback messages | Auto-cleanup, less code |
+| **Optional Chaining** | Accessing nested data | Prevents runtime errors |
 
 ---
 
-## 4. Key Patterns Used in This Codebase
-
-
-| Pattern | Files | Description |
-|---------|-------|-------------|
-| **Loading State** | Home, Mission, DataExplorer, Learning | `loading ? 
-<Skeleton /> : <Content />` |
-| **Container/Presenter** | Layout wraps pages | Layout handles structure, pages 
-handle content |
-| **Controlled Forms** | Playground, DataExplorer | React controls all form 
-values |
-| **Prop Drilling** | App → Layout → children | State passed through multiple 
-levels |
-| **Early Return** | ExplanationPanel, ResultsPanel | Guard clauses at component 
-start |
-| **List Rendering** | Every file | `array.map()` with `key` prop |
-| **Conditional CSS** | Layout, DataExplorer | Template literals for dynamic 
-classes |
-| **Error Boundaries** | (Not implemented) | Could add for error handling |
-
-
-This section explains the common React patterns and architectural decisions used throughout the codebase, with real examples from the actual code.
 
 ---
 
@@ -765,27 +763,5 @@ const currentExplanation = mission.explanations?.[activeQuery];
 - Prevents "Cannot read property of undefined" errors
 - Use with optional rendering: `{data?.name && <div>{data.name}</div>}`
 - Safer than `data && data.name && data.name.value`
-
----
-
-### Summary of Patterns
-
-| Pattern | When to Use | Benefits |
-|---------|-------------|----------|
-| **Loading State** | Any async data fetching | Better UX, prevents empty states |
-| **Container/Presenter** | Shared layout across pages | Code reuse, separation of concerns |
-| **Controlled Forms** | Forms with validation/transformation | Full control, real-time updates |
-| **Prop Drilling** | Simple state sharing (2-3 levels) | No extra libraries needed |
-| **Early Return** | Multiple conditional states | Cleaner code, less nesting |
-| **List Rendering** | Any dynamic lists | Efficient updates, proper reconciliation |
-| **Conditional CSS** | Dynamic styling based on state | Flexible, works with utility CSS |
-| **Multiple useState** | Independent state values | Clear separation, easier debugging |
-| **useEffect Dependencies** | Side effects tied to data | Prevents unnecessary re-runs |
-| **Error Handling** | All async operations | Graceful failures, user feedback |
-| **Component Composition** | Complex UI with repeated patterns | Reusability, maintainability |
-| **URL Parameters** | Dynamic routes | Access route data in components |
-| **Animations** | Enhanced UX | Polished, professional feel |
-| **Temporary State** | User feedback messages | Auto-cleanup, less code |
-| **Optional Chaining** | Accessing nested data | Prevents runtime errors |
 
 ---
