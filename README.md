@@ -67,8 +67,6 @@ Each component demonstrates practical React patterns while teaching MongoDB aggr
 4. [Key Patterns Used](docs/key-patterns-used.md)
 5. [Complete React Questions & Answers](docs/react-questions-answers.md)
 6. [MongoDB Concepts & Advanced Questions](docs/mongodb-questions-answers.md)
-7. [Portal UI Screenshots](#portal-ui-screenshots)
-
 ---
 
 ## 1. Project Structure Overview
